@@ -147,15 +147,6 @@ export default function Gallery() {
           {/* Backdrop — full screen, always closes on tap */}
           <div className="absolute inset-0 bg-black/92" onClick={() => setLightbox(null)} />
 
-          {/* Controls */}
-          <button
-            className="absolute top-3 right-3 z-10 flex items-center justify-center w-11 h-11 rounded-full bg-white/15 text-white text-2xl leading-none hover:bg-white/30 transition-colors"
-            onClick={() => setLightbox(null)}
-            aria-label="Zavřít"
-          >
-            ×
-          </button>
-
           <button
             className="absolute left-4 top-1/2 -translate-y-1/2 z-10 text-white text-5xl hover:opacity-60 transition-opacity disabled:opacity-20"
             onClick={prev}
@@ -177,6 +168,14 @@ export default function Gallery() {
           {/* Photo — pointer-events-none so clicks pass through to backdrop */}
           <div className="absolute inset-0 flex items-center justify-center p-14 pointer-events-none">
             <div className="relative w-full max-w-5xl h-full">
+              {/* Close button anchored to photo corner */}
+              <button
+                className="absolute -top-12 right-0 z-10 pointer-events-auto flex items-center justify-center w-14 h-14 rounded-full bg-white/20 text-white text-3xl leading-none hover:bg-white/40 transition-colors"
+                onClick={() => setLightbox(null)}
+                aria-label="Zavřít"
+              >
+                ×
+              </button>
               <Image
                 src={photos[lightbox].src}
                 alt={photos[lightbox].alt}
