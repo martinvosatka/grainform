@@ -1,6 +1,6 @@
 'use client'
 
-import { useRef, useState, useCallback } from 'react'
+import { useRef, useState, useCallback, useEffect } from 'react'
 import Image from 'next/image'
 
 const photos = Array.from({ length: 21 }, (_, i) => ({
@@ -22,6 +22,11 @@ export default function Gallery() {
   const [scrollLeft, setScrollLeft] = useState(0)
   const [lightbox, setLightbox] = useState<number | null>(null)
   const moved = useRef(false)
+
+  useEffect(() => {
+    document.body.style.overflow = lightbox !== null ? 'hidden' : ''
+    return () => { document.body.style.overflow = '' }
+  }, [lightbox])
 
   const onMouseDown = useCallback((e: React.MouseEvent) => {
     if (!trackRef.current) return
@@ -141,7 +146,7 @@ export default function Gallery() {
           aria-label="Zvětšená fotografie"
         >
           <button
-            className="absolute top-4 right-5 text-white text-5xl leading-none hover:opacity-60 transition-opacity"
+            className="absolute top-3 right-3 flex items-center justify-center w-11 h-11 rounded-full bg-white/15 text-white text-2xl leading-none hover:bg-white/30 transition-colors"
             onClick={() => setLightbox(null)}
             aria-label="Zavřít"
           >
