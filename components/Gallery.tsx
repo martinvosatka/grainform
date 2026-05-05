@@ -140,7 +140,7 @@ export default function Gallery() {
       {lightbox !== null && (
         <div
           className="fixed inset-0 z-50 bg-black/92 flex items-center justify-center p-4"
-          onClick={() => setLightbox(null)}
+          onClick={e => { if (e.target === e.currentTarget) setLightbox(null) }}
           role="dialog"
           aria-modal="true"
           aria-label="Zvětšená fotografie"
@@ -165,7 +165,6 @@ export default function Gallery() {
           <div
             className="relative w-full max-w-5xl"
             style={{ height: '80vh' }}
-            onClick={e => e.stopPropagation()}
           >
             <Image
               src={photos[lightbox].src}
