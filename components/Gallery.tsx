@@ -166,8 +166,8 @@ export default function Gallery() {
           </button>
 
           {/* Photo — pointer-events-none so clicks pass through to backdrop */}
-          <div className="absolute inset-0 flex items-center justify-center p-14 lg:px-32 lg:py-20 pointer-events-none">
-            <div className="relative w-full max-w-5xl lg:max-w-4xl h-full">
+          <div className="absolute inset-0 flex items-center justify-center p-14 pointer-events-none">
+            <div className="relative w-full max-w-5xl lg:max-w-2xl h-full lg:h-[62vh]">
               {/* Close button anchored to photo corner */}
               <button
                 className="absolute -top-12 right-0 z-10 pointer-events-auto flex items-center justify-center w-14 h-14 rounded-full bg-white/20 text-white text-3xl leading-none hover:bg-white/40 transition-colors"
