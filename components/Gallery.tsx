@@ -139,14 +139,17 @@ export default function Gallery() {
 
       {lightbox !== null && (
         <div
-          className="fixed inset-0 z-50 bg-black/92 flex items-center justify-center p-4"
-          onClick={e => { if (e.target === e.currentTarget) setLightbox(null) }}
+          className="fixed inset-0 z-50"
           role="dialog"
           aria-modal="true"
           aria-label="Zvětšená fotografie"
         >
+          {/* Backdrop — full screen, always closes on tap */}
+          <div className="absolute inset-0 bg-black/92" onClick={() => setLightbox(null)} />
+
+          {/* Controls */}
           <button
-            className="absolute top-3 right-3 flex items-center justify-center w-11 h-11 rounded-full bg-white/15 text-white text-2xl leading-none hover:bg-white/30 transition-colors"
+            className="absolute top-3 right-3 z-10 flex items-center justify-center w-11 h-11 rounded-full bg-white/15 text-white text-2xl leading-none hover:bg-white/30 transition-colors"
             onClick={() => setLightbox(null)}
             aria-label="Zavřít"
           >
@@ -154,7 +157,7 @@ export default function Gallery() {
           </button>
 
           <button
-            className="absolute left-4 text-white text-5xl hover:opacity-60 transition-opacity disabled:opacity-20"
+            className="absolute left-4 top-1/2 -translate-y-1/2 z-10 text-white text-5xl hover:opacity-60 transition-opacity disabled:opacity-20"
             onClick={prev}
             disabled={lightbox === 0}
             aria-label="Předchozí fotografie"
@@ -162,21 +165,8 @@ export default function Gallery() {
             ‹
           </button>
 
-          <div
-            className="relative w-full max-w-5xl"
-            style={{ height: '80vh' }}
-          >
-            <Image
-              src={photos[lightbox].src}
-              alt={photos[lightbox].alt}
-              fill
-              className="object-contain"
-              sizes="100vw"
-            />
-          </div>
-
           <button
-            className="absolute right-4 text-white text-5xl hover:opacity-60 transition-opacity disabled:opacity-20"
+            className="absolute right-4 top-1/2 -translate-y-1/2 z-10 text-white text-5xl hover:opacity-60 transition-opacity disabled:opacity-20"
             onClick={next}
             disabled={lightbox === photos.length - 1}
             aria-label="Další fotografie"
@@ -184,7 +174,20 @@ export default function Gallery() {
             ›
           </button>
 
-          <p className="absolute bottom-4 text-white/50 text-sm">
+          {/* Photo — pointer-events-none so clicks pass through to backdrop */}
+          <div className="absolute inset-0 flex items-center justify-center p-14 pointer-events-none">
+            <div className="relative w-full max-w-5xl h-full">
+              <Image
+                src={photos[lightbox].src}
+                alt={photos[lightbox].alt}
+                fill
+                className="object-contain"
+                sizes="100vw"
+              />
+            </div>
+          </div>
+
+          <p className="absolute bottom-4 left-1/2 -translate-x-1/2 z-10 text-white/50 text-sm">
             {lightbox + 1} / {photos.length}
           </p>
         </div>
