@@ -9,7 +9,7 @@ export default function Hero() {
             Tvořím trvalé hodnoty z kamene a dřeva
           </h1>
           <p className="text-lg text-primary/65 mb-10 max-w-lg leading-relaxed">
-            Tvořím objekty, nábytek a stavby ze dvou materiálů, které mají vlastní strukturu, historii i charakter. U dřeva i kamene se snažím respektovat jejich přirozený tvar a vlastnosti.
+            Tvořím stavby z kamene a výrobky ze dřeva. Při práci používám původní postupy a k surovinám nepřistupuji jen jako k materiálu, ale i jako k prvku, který si sám předurčuje své použití.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
