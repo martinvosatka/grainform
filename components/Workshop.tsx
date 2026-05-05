@@ -9,7 +9,7 @@ export default function Workshop() {
           Naučte se suché zdění sami
         </h2>
         <p className="text-white/65 text-lg leading-relaxed max-w-2xl mx-auto">
-          Organizuji také workshop s tématem „suché kamenné zídky do výšky jednoho metru". Workshop je pro skupinu 4–8 lidí a naučíte se na něm za jeden den jak teoretické tak praktické dovednosti, které budete moci použít u sebe doma, na chatě nebo jinde. Více se dozvíte na mém{' '}
+          Organizuji také workshop s tématem &bdquo;suché kamenné zídky do výšky jednoho metru&ldquo;. Workshop je pro skupinu 4–8 lidí a naučíte se na něm za jeden den jak teoretické tak praktické dovednosti, které budete moci použít u sebe doma, na chatě nebo jinde. Více se dozvíte na mém{' '}
           <a
             href="https://www.facebook.com/p/Such%C3%A9-kamenn%C3%A9-z%C3%ADdky-workshop-61574753138031/"
             target="_blank"
