@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 const services = [
   'Vyřezávané dřevěné sochy (často variace duté spirály)',
-  'Stoly z jednoho kusu koláče (příčný řez kmenem)',
+  'Stoly vyrobené z jednoho kusu kmene (příčný řez stromem)',
   'Fošny z celé šířky kmene',
   'Další dřevěný nábytek na míru',
   'Další dřevěné výrobky na zakázku',
