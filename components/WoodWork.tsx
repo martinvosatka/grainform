@@ -14,7 +14,7 @@ export default function WoodWork() {
       <div className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
         <div className="relative aspect-[3/2] rounded-2xl overflow-hidden order-2 lg:order-1">
           <Image
-            src="/images/woodwork-section.png"
+            src="/images/woodwork-section.jpg"
             alt="Ukázka práce se dřevem – Grainform"
             fill
             className="object-cover"
