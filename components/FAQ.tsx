@@ -24,10 +24,6 @@ const faqs = [
     a: 'Minimální. Stačí občas zkontrolovat stabilitu a doplnit menší kameny, pokud se časem uvolní. Výhodou je snadná oprava bez bourání celé konstrukce.',
   },
   {
-    q: 'Stavíte i zídky na svazích nebo u vodních ploch?',
-    a: 'Ano. Při správném založení a odvodnění lze suché zdi bezpečně použít i v náročnějším terénu nebo v kombinaci s potokem či jezírkem.',
-  },
-  {
     q: 'Kde působíte?',
     a: 'Pracuji převážně ve Středočeském kraji a okolí Benešova, ale po domluvě mohu realizovat projekty i jinde v Česku.',
   },
