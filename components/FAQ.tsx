@@ -17,7 +17,7 @@ const faqs = [
   },
   {
     q: 'Jaký kámen je nejlepší pro stavbu suché zdi?',
-    a: 'Nejčastěji se používá pískovec, žula nebo vápenec. Každý má jiné vlastnosti – důležité je, aby kámen měl rovné plochy a byl mrazuvzdorný.',
+    a: 'Při práci s kamenem lze využít téměř jakýkoli druh kamene. Důležité je především to, aby měl vhodný tvar, rovné plochy a byl dostatečně odolný vůči mrazu.',
   },
   {
     q: 'Jak náročná je údržba suché zdi?',
