@@ -28,10 +28,6 @@ const faqs = [
     a: 'Ano. Při správném založení a odvodnění lze suché zdi bezpečně použít i v náročnějším terénu nebo v kombinaci s potokem či jezírkem.',
   },
   {
-    q: 'Vyrábíte i dřevěné prvky do zahrad?',
-    a: 'Ano, vyrábím lavice, pergoly, stoly i drobné doplňky ze dřeva, které ladí s kamennými stavbami. Každý kus je originál vyrobený na míru.',
-  },
-  {
     q: 'Kde působíte?',
     a: 'Pracuji převážně ve Středočeském kraji a okolí Benešova, ale po domluvě mohu realizovat projekty i jinde v Česku.',
   },
