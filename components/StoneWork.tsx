@@ -36,7 +36,7 @@ export default function StoneWork() {
 
         <div className="relative aspect-[3/2] rounded-2xl overflow-hidden">
           <Image
-            src="/images/stone.workImage.png"
+            src="/images/stone-work-section.jpg"
             alt="Ukázka práce s kamenem – Grainform"
             fill
             className="object-cover"
