@@ -4,7 +4,7 @@ const services = [
   'Vyřezávané dřevěné sochy (často variace duté spirály)',
   'Stoly vyrobené z jednoho kusu kmene (příčný řez stromem)',
   'Fošny z celé šířky kmene',
-  'Další dřevěný nábytek na míru',
+  'Dřevěný nábytek na míru',
   'Další dřevěné výrobky na zakázku',
 ]
 
