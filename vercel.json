@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "grainform.vercel.app"
+        }
+      ],
+      "destination": "https://grainform.cz/:path*",
+      "permanent": true
+    }
+  ]
+}
