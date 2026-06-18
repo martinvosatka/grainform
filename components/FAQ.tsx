@@ -31,10 +31,6 @@ const faqs = [
     q: 'Stavíte i v zimě?',
     a: 'Většina kamenických prací probíhá od jara do podzimu, kdy jsou vhodné podmínky pro práci s materiálem. Konzultace, návrhy a přípravy lze řešit celoročně.',
   },
-  {
-    q: 'Jak dlouho trvá realizace projektu?',
-    a: 'Menší projekty (např. zídka do 5 metrů) zvládnu během několika dní, větší stavby nebo kombinace s dřevem trvají 1–3 týdny podle rozsahu a počasí.',
-  },
 ]
 
 export default function FAQ() {

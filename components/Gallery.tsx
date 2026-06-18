@@ -3,7 +3,7 @@
 import { useRef, useState, useCallback, useEffect } from 'react'
 import Image from 'next/image'
 
-const photos = Array.from({ length: 21 }, (_, i) => ({
+const photos = Array.from({ length: 20 }, (_, i) => ({
   src: `/images/gallery-photo-${i + 1}.png`,
   alt: `Ukázka realizace číslo ${i + 1} – kamenné a dřevěné práce Grainform`,
 }))
