@@ -1,7 +1,7 @@
 export default function Contact() {
   return (
     <section id="kontakt" className="py-20 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-2xl mx-auto text-center">
+      <div className="max-w-4xl mx-auto text-center">
         <span className="text-xs font-semibold tracking-widest uppercase text-primary/40 block mb-4">
           Kontakt
         </span>
