@@ -12,15 +12,23 @@ export default function WoodWork() {
   return (
     <section id="drevene-prace" className="py-20 bg-stone-50">
       <div className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-        <div className="relative aspect-[3/2] rounded-2xl overflow-hidden order-2 lg:order-1">
-          <Image
-            src="/images/woodwork-section.jpg"
-            alt="Ukázka práce se dřevem – Grainform"
-            fill
-            className="object-cover"
-            quality={100}
-            sizes="(max-width: 1024px) 100vw, 50vw"
-          />
+        <div className="order-2 lg:order-1">
+          <div className="relative aspect-[3/2] rounded-2xl overflow-hidden">
+            <Image
+              src="/images/woodwork-section.jpg"
+              alt="Ukázka práce se dřevem – Grainform"
+              fill
+              className="object-cover"
+              quality={100}
+              sizes="(max-width: 1024px) 100vw, 50vw"
+            />
+          </div>
+          <a
+            href="#kontakt"
+            className="lg:hidden mt-6 inline-flex items-center px-7 py-3.5 bg-[#444A3E] text-white font-medium rounded transition-opacity hover:opacity-75"
+          >
+            Poptat realizaci
+          </a>
         </div>
 
         <div className="order-1 lg:order-2">
@@ -44,7 +52,7 @@ export default function WoodWork() {
           </ul>
           <a
             href="#kontakt"
-            className="inline-flex items-center px-7 py-3.5 bg-[#444A3E] text-white font-medium rounded transition-opacity hover:opacity-75"
+            className="hidden lg:inline-flex items-center px-7 py-3.5 bg-[#444A3E] text-white font-medium rounded transition-opacity hover:opacity-75"
           >
             Poptat realizaci
           </a>
