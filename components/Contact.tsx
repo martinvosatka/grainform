@@ -101,6 +101,11 @@ export default function Contact() {
             <p className="text-primary font-medium">Benešov u Prahy</p>
           </div>
         </div>
+
+        <p className="text-primary/55 text-sm mt-8 leading-relaxed">
+          Preferuji kontakt prostřednictvím e-mailu nebo SMS. V pracovní době se mi často
+          nelze dovolat, ale jakmile to bude možné, na zprávu odpovím nebo vám zavolám zpět.
+        </p>
       </div>
     </section>
   )
