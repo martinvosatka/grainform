@@ -21,14 +21,16 @@ export default function Workshop() {
           .
         </p>
         <p className="text-white/65 text-lg leading-relaxed max-w-2xl mx-auto mt-4">
+          Píšu také{' '}
           <a
-            href="https://www.facebook.com/people/Povídání-o-kameni-a-dřevě/61590010306874/"
+            href="https://www.facebook.com/people/Pov%C3%ADd%C3%A1n%C3%AD-o-kameni-a-d%C5%99ev%C4%9B/61590010306874/"
             target="_blank"
             rel="noopener noreferrer"
             className="underline underline-offset-4 hover:text-white transition-colors"
           >
-            Více o mé práci si můžete přečíst na mém blogu.
+            blog
           </a>
+          .
         </p>
       </div>
     </section>
