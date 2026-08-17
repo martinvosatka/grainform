@@ -25,6 +25,14 @@ export default function Footer() {
             </svg>
           </a>
 
+          <a
+            href="https://www.facebook.com/people/Povídání-o-kameni-a-dřevě/61590010306874/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white/50 text-sm underline underline-offset-4 hover:text-white transition-colors"
+          >
+            Blog
+          </a>
         </div>
       </div>
     </footer>

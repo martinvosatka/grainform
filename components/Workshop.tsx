@@ -20,6 +20,16 @@ export default function Workshop() {
           </a>
           .
         </p>
+        <p className="text-white/65 text-lg leading-relaxed max-w-2xl mx-auto mt-4">
+          <a
+            href="https://www.facebook.com/people/Povídání-o-kameni-a-dřevě/61590010306874/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline underline-offset-4 hover:text-white transition-colors"
+          >
+            Více o mé práci si můžete přečíst na mém blogu.
+          </a>
+        </p>
       </div>
     </section>
   )
